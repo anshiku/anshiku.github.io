@@ -56,6 +56,10 @@ a:hover {
     margin-right: 10px;
 }
 
+#about img {
+    width:768px;
+}
+
 ul {
     padding: 0;
 }
