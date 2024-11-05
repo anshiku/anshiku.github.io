@@ -1,0 +1,173 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background-color: white;
+    padding: 30px 40px;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: white;
+}
+.item .name {
+    flex-grow: 1;
+    font-size: 110%;
+}
+
+.item .cost {
+    font-size: 110%;
+}
+
+.item .weight {
+    color: grey;
+}
+
+.item button {
+    background-color: #f1eee9;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.item:hover, .selected {
+    border: 2px solid;
+    border-color: tomato;
+}
+
+.item:hover button{
+    background-color: darkgrey;
+}
+
+section h2 {
+    margin: 25px 0;
+}
+
+.form form label, select {
+    display: block;
+}
+
+.form form > div {
+    padding: 0 32px;
+    width:40%;
+}
+
+.form select {
+    width:75%;
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+}
+
+.form [type="text"], [type="email"], [type="tel"], [type="time"], textarea {
+    width:75%;
+}
+
+.delivery {
+    font-style: italic;
+    margin: 4px 0;
+    font-size: 0.8em;
+}
+
+.form fieldset {
+    border: none;
+    padding: 4px 0;
+}
+
+.form > h2 {
+    text-align: center;
+    margin: 24px;
+}
+
+.form form {
+    font-size: 1.2em;
+}
+
+.form form label{
+    padding: 2px 0 2px 0;
+}
+
+#order_items > div {
+    padding-top: 16px;
+}
+
+#summ p{
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#order_items > div label:first-child {
+    font-weight: bold;
+}
+
+#ordercontent > div:last-child {
+    margin-top: 32px;
+}
+
+#empty_order {
+    font-weight: bold;
+}
+
+.form form select, input {
+    font-size: 0.8em;
+    padding: 12px 8px;
+}
+
+.form button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 32px;
+    margin-top: 12px;
+    font-size: 1em;
+}
+
+[type="radio"] {
+    margin-left: 0;
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: calc(1em + 4px);
+    }
+
+    section h2 {
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
