@@ -27,6 +27,13 @@ function dishSort(a, b) {
 }
 
 menu.sort(dishSort);
+
+for (let i = 0; i < menu.length; i++) {
+    if (menu[i].category == "main-course") {
+        menu[i].category = "main_course";
+    }
+}
+
 let menuDiv = document.getElementById("menu");
 categories.forEach(category => {
     const section = document.getElementById(`section_${category.id}`);
