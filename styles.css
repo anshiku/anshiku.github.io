@@ -1,0 +1,137 @@
+nav img {
+    width: 80px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:75px
+}
+
+header > div {
+    padding: 12px;
+}
+
+header h1 {
+    margin-left: 40px;
+    font-size: 2.5em;
+}
+
+header button{
+    padding: 12px 46px;
+    background-color: darkgray;
+    border-radius: 10px;
+    border: 1px solid dimgray;
+    color: white;
+    font-size: 1.5em;
+}
+
+header input[type="text"] {
+    padding: 12px 32px 12px 4px;
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+}
+
+#costVar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 26px;
+}
+
+#costVar input[type="number"] {
+    padding: 4px 2px;
+    width: 64px;
+}
+
+#costVar > div{
+    display: flex;
+    flex-direction: column;
+}
+
+#checkDisc label{
+    font-size: 1.2em;
+}
+
+#checkDisc {
+    margin-bottom: 32px;
+}
+
+aside {
+    background-color:mintcream;
+    margin-left: -10px;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+form {
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 100%;
+}
+
+form button {
+    padding: 12px 46px;
+    background-color: darkgray;
+    border-radius: 10px;
+    border: 1px solid dimgray;
+    color: white;
+    font-size: 1.5em;
+}
+
+footer {
+    border: 1px solid black;
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#catalog {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    flex-grow: 30;
+}
+
+#headCatalog {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#filter {
+    margin-right: 128px;
+    padding: 16px;
+    font-size: 1.1em;
+}
+
+#loading {
+    padding: 12px 46px;
+    background-color: darkgray;
+    border-radius: 10px;
+    border: 1px solid dimgray;
+    color: white;
+    font-size: 1.5em;
+}

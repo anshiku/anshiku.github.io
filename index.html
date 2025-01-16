@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="cards.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Компания</h1>
+            <div>
+                <input type="text" name="search" placeholder="Введите запрос" size="40">
+                <button>Найти</button>
+            </div>
+            <nav>
+                <a href="#"><img src="basket-icon-4.png" alt="basket"></a>
+                <a href="#"><img src="userrr1.png" alt="user"></a>
+            </nav>
+        </header>
+        <main>
+            <aside class="sidebar">
+                <form>
+                    <h1>Категории</h1>
+                    <div id="categories">
+                        <div>
+                            <input type="checkbox" id="cat1" name="Category_1">
+                            <label for="cat1">Категория 1</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cat2" name="Category_2">
+                            <label for="cat2">Категория 2</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cat3" name="Category_3">
+                            <label for="cat3">Категория 3</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cat4" name="Category_4">
+                            <label for="cat4">Категория 4</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cat5" name="Category_5">
+                            <label for="cat5">Категория 5</label>
+                        </div>
+                    </div>
+                    <h1>Стоимость</h1>
+                    <div id="costVar">
+                        <div>
+                            <label for="mincost">От</label>
+                            <input type="number" id="mincost" name="Min_price" min="0" max="20000" step="10" placeholder="0">
+                        </div>
+                        <div>
+                            <label for="maxcost">До</label>
+                            <input type="number" id="maxcost" name="Max_price" min="0" max="20000" step="10" placeholder="0">
+                        </div>
+                    </div>
+                    <div id="checkDisc">
+                        <input type="checkbox" id="discount" name="Only_discount">
+                        <label for="discount">Только товары со скидками</label>
+                    </div>
+                    <button>Применить</button>
+                </form>
+            </aside>
+            <section id="catalog">
+                <div id="headCatalog">
+                    <h1>Каталог</h1>
+                    <div>
+                        <select id="filter" name="filter">
+                            <option value="low_rating">По убыванию рейтинга</option>
+                            <option value="high_rating">По возрастанию рейтинга</option>
+                            <option value="low_cost">По убыванию цены</option>
+                            <option value="high_cost">По возрастанию цены</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="loading">Загрузить ещё</button>
+            </section>
+        </main>
+        <footer>
+            <p>©2025 Компания</p>
+        </footer>
+    </body>
+</html>
